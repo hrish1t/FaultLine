@@ -15,7 +15,7 @@ export default function HeaderAuth({ user }) {
     return (
       <Link
         href="/login"
-        className="font-mono text-xs md:text-sm font-bold uppercase tracking-wider text-white transition hover:text-red-500"
+        className="font-mono text-xs md:text-sm font-bold uppercase tracking-wider text-white transition hover:opacity-80"
       >
         Login
       </Link>

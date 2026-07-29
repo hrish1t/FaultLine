@@ -76,9 +76,11 @@ export default function SiteChrome({ children, user }) {
         }`}
       >
         {/* IEEE VIT Logo Button */}
-        <Link
-          href="/"
-          className="flex items-center justify-center border-2 border-white/80 bg-black/95 px-4 py-3 backdrop-blur-xl shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] transition-all duration-200 hover:border-red-500 hover:shadow-[4px_4px_0px_0px_#ef4444] hover:-translate-y-0.5"
+        <a
+          href="https://www.ieeevit.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center border-2 border-white bg-black/95 px-4 py-3 backdrop-blur-xl shadow-[4px_4px_0px_0px_#ffffff] transition-all duration-200 hover:border-[#00f0ff] hover:shadow-[4px_4px_0px_0px_#00f0ff] hover:-translate-y-0.5"
         >
           <Image
             src="/ieeevit.png"
@@ -88,17 +90,17 @@ export default function SiteChrome({ children, user }) {
             className="h-7 md:h-8 w-auto object-contain"
             priority
           />
-        </Link>
+        </a>
 
         {/* Individual Rectangular Navigation Buttons */}
         <nav className="flex items-center gap-4">
           {/* FaultLine Symbol/Wordmark Button */}
           <Link
             href="/"
-            className="flex items-center border-2 border-white/80 bg-black/95 px-5 py-2.5 md:px-6 md:py-3 backdrop-blur-xl shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] transition-all duration-200 hover:border-red-500 hover:shadow-[4px_4px_0px_0px_#ef4444] hover:-translate-y-0.5"
+            className="flex items-center border-2 border-white bg-black/95 px-5 py-2.5 md:px-6 md:py-3 backdrop-blur-xl shadow-[4px_4px_0px_0px_#ffffff] transition-all duration-200 hover:border-[#ff0000] hover:shadow-[4px_4px_0px_0px_#ff0000] hover:-translate-y-0.5"
           >
             <div className="fl-wordmark text-base md:text-lg font-bold tracking-widest">
-              <span className="text-red-500">Fault</span>
+              <span className="text-[#ff0000]">Fault</span>
               <span className="text-white">Line</span>
             </div>
           </Link>
@@ -106,13 +108,13 @@ export default function SiteChrome({ children, user }) {
           {/* Live Schedule Button */}
           <Link
             href="/live"
-            className="flex items-center border-2 border-white/80 bg-black/95 px-5 py-2.5 md:px-6 md:py-3 font-mono text-xs md:text-sm font-bold uppercase tracking-wider text-white backdrop-blur-xl shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] transition-all duration-200 hover:border-red-500 hover:shadow-[4px_4px_0px_0px_#ef4444] hover:-translate-y-0.5"
+            className="flex items-center border-2 border-white bg-black/95 px-5 py-2.5 md:px-6 md:py-3 font-mono text-xs md:text-sm font-bold uppercase tracking-wider text-white backdrop-blur-xl shadow-[4px_4px_0px_0px_#ffffff] transition-all duration-200 hover:border-[#00f0ff] hover:shadow-[4px_4px_0px_0px_#00f0ff] hover:-translate-y-0.5"
           >
             Live Schedule
           </Link>
 
           {/* Auth/User Button */}
-          <div className="flex items-center border-2 border-white/80 bg-black/95 px-5 py-2.5 md:px-6 md:py-3 backdrop-blur-xl shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] transition-all duration-200 hover:border-red-500 hover:shadow-[4px_4px_0px_0px_#ef4444] hover:-translate-y-0.5">
+          <div className="flex items-center border-2 border-white bg-black/95 px-5 py-2.5 md:px-6 md:py-3 backdrop-blur-xl shadow-[4px_4px_0px_0px_#ffffff] transition-all duration-200 hover:border-[#ff0000] hover:shadow-[4px_4px_0px_0px_#ff0000] hover:-translate-y-0.5">
             <HeaderAuth user={user} />
           </div>
         </nav>
